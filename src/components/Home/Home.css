@@ -1,0 +1,10 @@
+.tasks{
+    padding: 50px;
+}
+button a{
+    text-decoration: none;
+}
+button a:hover{
+    text-decoration: none;
+    color: white;
+}
