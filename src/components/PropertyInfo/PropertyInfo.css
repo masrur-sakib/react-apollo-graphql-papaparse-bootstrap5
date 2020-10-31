@@ -1,0 +1,56 @@
+/* .property-block{
+    color: black;
+    width: 30%; 
+    height: 500px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+} */
+
+
+.card{
+    border: none;
+    cursor: text;
+}
+.card-content{
+    min-width: 300px;
+    border: 1px solid #80808073;
+    box-shadow: 0 0 35px -2px #48497926;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.card-content:hover{
+    transform: scale(1.05);
+}
+.carousel-icon {
+    background-color: #17e0e0;
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 20px;
+}
+.property-price{
+    margin-left: 15px;
+    margin-top: -17px;
+    padding: 5px 15px 2px;
+    border-radius: 25px;
+    position: absolute;
+    color: white;
+    background-color: #17e0e0;
+}
+.property-icon{
+    margin-left: 30px;
+    margin-top: -17px;
+    padding: 5px 10px 10px;
+    border-radius: 25px;
+    position: absolute;
+    color: white;
+    background-color: #17e0e0;
+}
+.payment-period{
+    font-size: 12px;
+}
+.property--info{
+    padding: 30px 20px;
+}

@@ -4,7 +4,7 @@ import "./MultiStepForm.css";
 const MultiStepForm = () => {
     return (
         <div>
-            <h1>This is Multi Step Form</h1>
+            <a className="form-page-title" href="/multi-step-form">Multi Step Form</a>
         </div>
     );
 };

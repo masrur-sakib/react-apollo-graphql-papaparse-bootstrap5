@@ -1,14 +1,13 @@
 import React from 'react';
 import "./Header.css";
-import siteLogo from "../../images/siteLogo.png";
 
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar navbar-light text-light bg-info">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
-                        Gain Solutions Tasks
+                    <a className="navbar-brand site-title" href="/">
+                        <h3>React Frontend Tasks</h3>
                     </a>
                 </div>
             </nav>

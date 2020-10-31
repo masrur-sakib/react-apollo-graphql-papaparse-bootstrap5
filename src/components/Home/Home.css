@@ -1,10 +1,6 @@
 .tasks{
     padding: 50px;
 }
-button a{
+div a{
     text-decoration: none;
-}
-button a:hover{
-    text-decoration: none;
-    color: white;
 }

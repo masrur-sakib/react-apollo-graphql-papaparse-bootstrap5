@@ -1,0 +1,17 @@
+.property-collections-title{
+    padding: 20px;
+    color: #17E0E0;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.property-collections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.property-collections-body{
+    padding-bottom: 50px;
+}

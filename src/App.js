@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import CardDesign from './components/CardDesign/CardDesign';
+import PropertyCollections from './components/PropertyCollections/PropertyCollections';
 import ToDo from './components/ToDo/ToDo';
 import MultiStepForm from './components/MultiStepForm/MultiStepForm';
 import NotFound from './components/NotFound/NotFound';
@@ -20,8 +20,8 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route path="/card-design">
-              <CardDesign></CardDesign>
+            <Route path="/property-collections">
+              <PropertyCollections></PropertyCollections>
             </Route>
             <Route path="/toDo">
               <ToDo></ToDo>
