@@ -1,3 +1,8 @@
+.property-collections-page{
+    margin: 10px 30px;
+    box-shadow: 0 0 35px -2px #48497926;
+    padding-bottom: 20px;
+}
 .property-collections-title{
     padding: 20px;
     color: #17E0E0;
@@ -11,7 +16,4 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.property-collections-body{
-    padding-bottom: 50px;
 }

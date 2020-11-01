@@ -1,0 +1,10 @@
+td{
+    min-width: 70px;
+    max-width: 70px;
+    overflow: auto;
+}
+.td-more-data{
+    min-width: 100px;
+    max-width: 100px;
+    overflow: auto;
+}

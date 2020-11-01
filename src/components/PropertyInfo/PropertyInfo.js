@@ -59,7 +59,7 @@ const PropertyInfo = (props) => {
                                         </svg>
                                     </div>
                                     <div class="col-sm-10">
-                                        {props.property.availableFrom}
+                                        {props.property.availableFrom} - Undetermined
                                     </div>
                                 </div>
                                 <div class="row">
@@ -70,7 +70,7 @@ const PropertyInfo = (props) => {
                                         </svg>
                                     </div>
                                     <div class="col-sm-10">
-                                        {props.property.minimumStay}
+                                        Minimum Stay: {props.property.minimumStay}
                                     </div>
                                 </div>
                             </div>

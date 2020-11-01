@@ -4,10 +4,10 @@ import "./Header.css";
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-light text-light bg-info">
+            <nav className="navbar navbar-light text-light site-header">
                 <div className="container-fluid">
                     <a className="navbar-brand site-title" href="/">
-                        <h3>React Frontend Tasks</h3>
+                        <h4>React Frontend Tasks</h4>
                     </a>
                 </div>
             </nav>

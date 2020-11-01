@@ -1,10 +1,32 @@
-.form-page-title{
-    padding: 20px;
-    margin-left: 5%;
-    color: #17E0E0;
-    font-size: 30px;
-    text-align: center;
+.multi-step-form-page{
+    margin: 10px 30px;
+    box-shadow: 0 0 35px -2px #48497926;
+    padding-bottom: 20px;
+}
+.multi-step-form-header{
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #17A2B8;
+}
+.site-title{
     display: flex;
     flex-direction: column;
     align-self: center;
+}
+.site-title h5{
+    color: white;
+}
+.form-page-left{
+    border-right: 1px solid #8080805e;
+}
+.multi-step-form{
+    margin: 0 auto;
+    padding: 50px;
+    width: 400px;
+    border: 1px solid #80808046;
+    box-shadow: 0 0 35px -2px #48497926;
+    cursor: pointer;
+}
+.form-page-right{
+    max-width: 60%;
 }

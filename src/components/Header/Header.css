@@ -1,3 +1,6 @@
-.site-title h3{
+.site-header{
+    background-color: #17a3b8cc;
+}
+.site-title h4{
     color: #ffffffec;
 }
