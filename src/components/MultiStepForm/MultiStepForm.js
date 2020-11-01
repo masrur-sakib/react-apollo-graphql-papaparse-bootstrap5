@@ -13,7 +13,7 @@ const MultiStepForm = () => {
     const [submittedData, setSubmittedData] = useState([]);
 
     const showStep = (step) => {
-        switch(step){
+        switch (step) {
             case 1:
                 return <StepOne></StepOne>
             case 2:
@@ -25,13 +25,13 @@ const MultiStepForm = () => {
         };
     };
 
-    const submitHandler = () => {
+    const submitHandler = (event) => {
         setSubmittedData([...submittedData, inputData]);
         setInputData("");
         setStep(1);
     };
     return (
-        <formContext.Provider value={{step, setStep, inputData, setInputData, submittedData, setSubmittedData, submitHandler}}>
+        <formContext.Provider value={{ step, setStep, inputData, setInputData, submittedData, setSubmittedData, submitHandler }}>
             <div className="multi-step-form-page">
                 <nav className="navbar navbar-light text-light multi-step-form-header">
                     <div className="container-fluid site-title">
@@ -40,15 +40,15 @@ const MultiStepForm = () => {
                         </a>
                     </div>
                 </nav>
-                <div className="row">
-                    <div className="col-sm-4 form-page-left">
+                <div className="multi-step-form-body">
+                    <div className="form-page-left">
                         <div className="multi-step-form">
                             {showStep(step)}
                         </div>
                     </div>
-                    <div className="col-sm-8 pl-4 pr-4 form-page-right">
+                    <div className="pl-4 pr-4 form-page-right">
                         <h5 className="mt-5 text-info">Results Table</h5>
-                        {submittedData.length>0 ? <Results></Results> : ""}
+                        {submittedData.length > 0 ? <Results></Results> : ""}
                     </div>
                 </div>
 

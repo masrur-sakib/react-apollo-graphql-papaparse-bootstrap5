@@ -16,9 +16,9 @@
 .site-title h5{
     color: white;
 }
-.form-page-left{
+/* .form-page-left{
     border-right: 1px solid #8080805e;
-}
+} */
 .multi-step-form{
     margin: 0 auto;
     padding: 50px;
@@ -27,6 +27,15 @@
     box-shadow: 0 0 35px -2px #48497926;
     cursor: pointer;
 }
+.multi-step-form-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.form-page-left{
+    width: 400px;
+}
 .form-page-right{
-    max-width: 60%;
+    width: 800px;
 }
