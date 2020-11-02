@@ -1,0 +1,124 @@
+.to-do-page{
+    /* background-color: #D4D3D3; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+}
+.input-todo, .btn-submit{
+    border: none;
+}
+.input-todo:focus, .btn-submit-todo:focus{
+    outline: none;
+}
+.btn-submit-todo{
+    padding: 0px;
+    background-color: #FFFFFF;
+    border: none;
+}
+.icon-submit{
+    color: #bbbaba67;
+    font-size: 20px;
+}
+.form-header{
+    border-bottom: 2px solid #bbbaba67;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.sort-by-dropdown{
+    margin-left: 10px;
+    padding: 3px 10px;
+    color: white;
+    background-color: #17ADD2;
+    border: none;
+}
+.sort-by-dropdown:focus{
+    outline: none;
+}
+.form-body{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #bbbaba67;
+}
+.form-todo{
+    padding-bottom: 15px;
+    border: 2px solid #bbbaba67;
+    display: flex;
+    justify-content: space-around;
+}
+.to-do-item{
+    padding: 20px 10px;
+    border-bottom: 2px solid #bbbaba67;
+}
+.checkbox-to-do-item{
+    width: 20px;
+    height: 20px;
+}
+.to-do-item-name{
+    font-size: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 625px) { 
+    .to-do-body {
+        margin: 0% 0% 0% 5%;
+        padding: 10%;
+        max-width: 90%;
+        height: 550px;
+        background-color: white;
+        box-shadow: 0 0 35px -2px #48497926;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+ }
+@media (min-width: 625px) { 
+    .to-do-body {
+        margin: 0% 0% 0% 15%;
+        padding: 5%;
+        max-width: 70%;
+        height: 550px;
+        background-color: white;
+        box-shadow: 0 0 35px -2px #48497926;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+ }
+@media (min-width: 825px) { 
+    .to-do-body {
+        margin: 0% 0% 0% 20%;
+        padding: 5%;
+        max-width: 60%;
+        height: 550px;
+        background-color: white;
+        box-shadow: 0 0 35px -2px #48497926;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+ }
+
+@media (min-width: 1000px) { 
+    .to-do-body {
+        margin: 0% 0% 0% 25%;
+        padding: 5%;
+        max-width: 50%;
+        height: 550px;
+        background-color: white;
+        box-shadow: 0 0 35px -2px #48497926;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+ }
+
+@media (min-width: 1300px) { 
+    .to-do-body {
+        margin: 0% 0% 5% 32%;
+        padding: 4%;
+        max-width: 36%;
+        height: 700px;
+        background-color: white;
+        box-shadow: 0 0 35px -2px #4849794d;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+ }
+

@@ -38,4 +38,5 @@
 }
 .form-page-right{
     width: 800px;
+    min-height: 400px;
 }

@@ -27,12 +27,12 @@ const Results = () => {
                                 <td className="td-more-data">{result.firstName}</td>
                                 <td className="td-more-data">{result.email}</td>
                                 <td className="td-more-data">{result.description}</td>
-                                <td>{result.max_x}</td>
-                                <td>{result.min_x}</td>
-                                <td>{result.max_y}</td>
-                                <td>{result.min_y}</td>
-                                <td>{result.max_z}</td>
-                                <td>{result.min_z}</td>
+                                <td className="td-less-data">{result.max_x}</td>
+                                <td className="td-less-data">{result.min_x}</td>
+                                <td className="td-less-data">{result.max_y}</td>
+                                <td className="td-less-data">{result.min_y}</td>
+                                <td className="td-less-data">{result.max_z}</td>
+                                <td className="td-less-data">{result.min_z}</td>
                             </tr>
                         ))
                     }

@@ -1,10 +1,10 @@
-td{
+.td-less-data{
     min-width: 70px;
     max-width: 70px;
-    overflow: auto;
+    overflow-x: auto;
 }
 .td-more-data{
     min-width: 100px;
-    max-width: 100px;
-    overflow: auto;
+    max-width: 150px;
+    overflow-x: auto;
 }
