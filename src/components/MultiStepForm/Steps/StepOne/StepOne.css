@@ -1,10 +1,6 @@
 div .btn{
     min-width: 80px;
 }
-.btn-step-one{
-    background-color: #45B5C6;
-    border: none;
-}
 .btn-step-one:hover{
     background-color: #01a8c2;
 }

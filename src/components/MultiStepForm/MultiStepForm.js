@@ -12,6 +12,8 @@ const MultiStepForm = () => {
     const [inputData, setInputData] = useState([]);
     const [submittedData, setSubmittedData] = useState([]);
     const [emailExists, setEmailExists] = useState(false);
+    // const [, setEmailExists] = useState(false);
+    let csvValues = [];
 
     const showStep = (step) => {
         switch (step) {
@@ -57,6 +59,15 @@ const MultiStepForm = () => {
     const StepTwoHandler = (event) => {
         event.preventDefault();
 
+        // if(!inputData.max_x, !inputData.min_x, !inputData.max_y, !inputData.min_x, !inputData.max_z, !inputData.min_z){
+        //     inputData.max_x = csvValues[0];
+        //     inputData.min_x = csvValues[1];
+        //     inputData.max_y = csvValues[2];
+        //     inputData.min_y = csvValues[3];
+        //     inputData.max_z = csvValues[4];
+        //     inputData.min_z = csvValues[5];
+        // }
+
         //Input Validation
         const inputFirstName = document.getElementById("firstName").value;
         const inputEmail = document.getElementById("email").value;
@@ -93,7 +104,7 @@ const MultiStepForm = () => {
         };
     };
     return (
-        <formContext.Provider value={{ step, setStep, inputData, setInputData, submittedData, setSubmittedData, StepTwoHandler, StepOneHandler }}>
+        <formContext.Provider value={{ step, setStep, inputData, setInputData, submittedData, setSubmittedData, StepTwoHandler, StepOneHandler, csvValues }}>
             <div className="multi-step-form-page">
                 <nav className="navbar navbar-light text-light multi-step-form-header">
                     <div className="container-fluid multi-step-form-page-title">
@@ -108,9 +119,14 @@ const MultiStepForm = () => {
                             {showStep(step)}
                         </div>
                     </div>
-                    <div className="pl-4 pr-4 form-page-right">
-                        <h5 className="mt-5 text-info">Results Table</h5>
-                        {submittedData.length > 0 ? <Results></Results> : ""}
+                    <div className="pr-4 form-page-right">
+                        {submittedData.length > 0 
+                        ? <div>
+                            <h5 className="mt-5 text-info">Results Table</h5>
+                            <Results></Results>    
+                        </div>
+                        
+                        : ""}
                     </div>
                 </div>
             </div>

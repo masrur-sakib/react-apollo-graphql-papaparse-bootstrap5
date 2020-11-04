@@ -6,8 +6,8 @@ import { CSVReader } from 'react-papaparse';
 const buttonRef = React.createRef();
 
 const StepTwo = () => {
-    const { setStep, inputData, setInputData, StepTwoHandler } = useContext(formContext);
-
+    const { setStep, inputData, setInputData, StepTwoHandler, csvValues } = useContext(formContext);
+    
     // Papaparse Codes- To Parse CSV File
     const handleOpenDialog = (e) => {
         if (buttonRef.current) {
@@ -23,8 +23,11 @@ const StepTwo = () => {
             if (i === (data.length - 2)) {
                 const biggestX = Math.max(...arrayX);
                 document.getElementById("max_x").value = biggestX;
+                csvValues.push(biggestX);
+
                 const smallestX = Math.min(...arrayX);
                 document.getElementById("min_x").value = smallestX;
+                csvValues.push(smallestX);
             };
         };
         
@@ -36,8 +39,11 @@ const StepTwo = () => {
             if (i === (data.length - 2)) {
                 const biggestY = Math.max(...arrayY);
                 document.getElementById("max_y").value = biggestY;
+                csvValues.push(biggestY);
+
                 const smallestY = Math.min(...arrayY);
                 document.getElementById("min_y").value = smallestY;
+                csvValues.push(smallestY);
             };
         };
 
@@ -49,10 +55,22 @@ const StepTwo = () => {
             if (i === (data.length - 2)) {
                 const biggestZ = Math.max(...arrayZ);
                 document.getElementById("max_z").value = biggestZ;
+                csvValues.push(biggestZ);
+
                 const smallestZ = Math.min(...arrayZ);
                 document.getElementById("min_z").value = smallestZ;
+                csvValues.push(smallestZ);
             };
         };
+        
+        if(!inputData.max_x, !inputData.min_x, !inputData.max_y, !inputData.min_x, !inputData.max_z, !inputData.min_z){
+            inputData.max_x = csvValues[0];
+            inputData.min_x = csvValues[1];
+            inputData.max_y = csvValues[2];
+            inputData.min_y = csvValues[3];
+            inputData.max_z = csvValues[4];
+            inputData.min_z = csvValues[5];
+        }
     }
     const handleOnError = (err, file, inputElem, reason) => {
         console.log(err)
@@ -109,37 +127,37 @@ const StepTwo = () => {
                 </CSVReader>
 
                 <div className="col-md-6 mb-3">
-                    <input type="number" className="form-control"
+                    <input type="number" step="any" className="form-control"
                         value={inputData["max_x"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "max_x": e.target.value })}
                         placeholder="Max X" id="max_x" aria-label="Max X"></input>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <input type="number" className="form-control"
+                    <input type="number" step="any" className="form-control"
                         value={inputData["min_x"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "min_x": e.target.value })}
                         placeholder="Min X" id="min_x" aria-label="Min X"></input>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <input type="number" className="form-control"
+                    <input type="number" step="any" className="form-control"
                         value={inputData["max_y"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "max_y": e.target.value })}
                         placeholder="Max Y" id="max_y" aria-label="Max Y"></input>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <input type="number" className="form-control"
+                    <input type="number" step="any" className="form-control"
                         value={inputData["min_y"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "min_y": e.target.value })}
                         placeholder="Min Y" id="min_y" aria-label="Min Y"></input>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <input type="number" className="form-control"
+                    <input type="number" step="any" className="form-control"
                         value={inputData["max_z"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "max_z": e.target.value })}
                         placeholder="Max Z" id="max_z" aria-label="Max Z"></input>
                 </div>
                 <div className="col-md-6 mb-3">
-                    <input type="number" className="form-control"
+                    <input type="number" step="any" className="form-control"
                         value={inputData["min_z"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "min_z": e.target.value })}
                         placeholder="Min Z" id="min_z" aria-label="Min Z"></input>

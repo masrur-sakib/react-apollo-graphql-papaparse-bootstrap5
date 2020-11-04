@@ -28,7 +28,7 @@ const StepOne = () => {
                 </div>
                 <p className="text-danger text-center" id="alert-error-stepOne"></p>
                 <div className="d-flex justify-content-center">
-                    <button type="submit" className="btn btn-primary btn-step-one" onClick={StepOneHandler}>
+                    <button type="submit" className="btn btn-info" onClick={StepOneHandler}>
                         Next &rarr;
                     </button>
                 </div>

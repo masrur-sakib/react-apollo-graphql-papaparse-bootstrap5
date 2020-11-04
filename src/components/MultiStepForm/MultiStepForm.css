@@ -17,7 +17,6 @@
     color: white;
 }
 .multi-step-form{
-    margin: 0 auto;
     padding: 50px;
     width: 400px;
     border: 1px solid #80808046;
@@ -25,15 +24,14 @@
     cursor: pointer;
 }
 .multi-step-form-body{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    padding: 20px;
 }
 .form-page-left{
-    width: 400px;
+    width: 20%;
+    margin: auto;
 }
 .form-page-right{
-    width: 800px;
+    width: 90%;
+    margin-left: 5%;
     min-height: 400px;
 }
