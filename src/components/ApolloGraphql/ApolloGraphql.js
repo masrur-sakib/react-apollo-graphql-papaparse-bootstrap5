@@ -11,10 +11,8 @@ const ApolloGraphql = () => {
                     </a>
                 </div>
             </nav>
-            <div>
-                <h5 className="text-center">
-                    Please go to this <a className="navbar-brand" href="https://masrursakib-apollo-graphql-app.netlify.app/">link</a> for solution.
-                </h5>
+            <div className="d-flex justify-content-center">
+                <button className="btn btn-info"><a href="https://masrursakib-apollo-graphql-app.netlify.app/">Please go there for solution.</a></button>
             </div>
         </div>
     );
