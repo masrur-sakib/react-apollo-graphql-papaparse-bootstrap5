@@ -46,7 +46,7 @@ const Home = () => {
                             <div className="card-header text-center">Apollo Hook (GraphQL) Task</div>
                             <div className="card-body d-flex justify-content-center">
                                 <button className="btn btn-info">
-                                    <a href="/apollo-graphql" target="_blank">Bonus Task Solution</a>
+                                    <a href="https://masrursakib-apollo-graphql-app.netlify.app/" target="_blank">Bonus Task Solution</a>
                                 </button>
                             </div>
                         </div>

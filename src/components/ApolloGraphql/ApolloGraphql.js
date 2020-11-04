@@ -13,7 +13,7 @@ const ApolloGraphql = () => {
             </nav>
             <div>
                 <h5 className="text-center">
-                    Work in progress, will be done asap.
+                    Please go to this <a className="navbar-brand" href="https://masrursakib-apollo-graphql-app.netlify.app/">link</a> for solution.
                 </h5>
             </div>
         </div>
