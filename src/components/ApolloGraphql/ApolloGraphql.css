@@ -1,23 +1,18 @@
-.property-collections-page{
+.apollo-graphql-task-page{
     margin: 10px 30px;
     box-shadow: 0 0 35px -2px #48497926;
     padding-bottom: 20px;
 }
-.property-collections-page-header{
+.apollo-graphql-page-header{
     height: 50px;
     margin-bottom: 20px;
     background-color: #45B5C6;
 }
-.property-collections-page-title{
+.apollo-graphql-page-title{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.property-collections-page-title h5{
+.apollo-graphql-page-title h5{
     color: white;
-}
-.property-collections{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }

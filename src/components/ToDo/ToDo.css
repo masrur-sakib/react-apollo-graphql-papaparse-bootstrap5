@@ -1,12 +1,7 @@
 .to-do-page{
-    /* padding-top: 50px;
-    padding-bottom: 50px;
-    height: 100%;
-    width: 100%; */
     margin: 10px 30px;
     box-shadow: 0 0 35px -2px #48497926;
     padding-bottom: 20px;
-    
 }
 .to-do-page-header{
     height: 50px;

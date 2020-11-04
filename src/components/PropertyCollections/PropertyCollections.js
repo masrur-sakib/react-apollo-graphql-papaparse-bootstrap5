@@ -8,8 +8,8 @@ const PropertyCollections = () => {
 
     return (
         <div className="property-collections-page">
-            <nav className="navbar navbar-light text-light multi-step-form-header">
-                <div className="container-fluid site-title">
+            <nav className="navbar navbar-light text-light property-collections-page-header">
+                <div className="container-fluid property-collections-page-title">
                     <a className="navbar-brand" href="/property-collections">
                         <h5>Property Collections</h5>
                     </a>

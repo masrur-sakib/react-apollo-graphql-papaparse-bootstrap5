@@ -1,6 +1,15 @@
 .tasks{
-    padding: 50px;
+    padding: 10% 0;
+}
+.task-body{
+    box-shadow: 0 0 35px -2px #48497926;
+    border: 1px solid black;
 }
 div a{
     text-decoration: none;
+    color: white;
+}
+div a:hover{
+    text-decoration: none;
+    color: white;
 }
