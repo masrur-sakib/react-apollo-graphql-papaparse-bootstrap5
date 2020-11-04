@@ -1,9 +1,18 @@
-.tasks{
-    padding: 10% 0;
+.home-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.task-body{
+.tasks{
+    padding: 10% 0px;
+}
+.task-card{
+    margin: 20px 30px 0px 0px;
+}
+.home-page .task-body{
+    min-width: 280px;
     box-shadow: 0 0 35px -2px #48497926;
-    border: 1px solid black;
+    border: 1px solid #8080804f;
 }
 div a{
     text-decoration: none;

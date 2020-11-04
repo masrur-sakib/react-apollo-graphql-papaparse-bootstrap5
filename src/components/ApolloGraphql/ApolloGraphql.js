@@ -6,11 +6,16 @@ const ApolloGraphql = () => {
         <div className="apollo-graphql-task-page">
             <nav className="navbar navbar-light text-light apollo-graphql-page-header">
                 <div className="container-fluid apollo-graphql-page-title">
-                    <a className="navbar-brand" href="/toDo">
-                        <h5>Apollo GraphQL Tasks</h5>
+                    <a className="navbar-brand" href="/apollo-graphql">
+                        <h5>Apollo Hook (GraphQL) Task</h5>
                     </a>
                 </div>
             </nav>
+            <div>
+                <h5 className="text-center">
+                    Work in progress, will be done asap.
+                </h5>
+            </div>
         </div>
     );
 };

@@ -59,15 +59,6 @@ const MultiStepForm = () => {
     const StepTwoHandler = (event) => {
         event.preventDefault();
 
-        // if(!inputData.max_x, !inputData.min_x, !inputData.max_y, !inputData.min_x, !inputData.max_z, !inputData.min_z){
-        //     inputData.max_x = csvValues[0];
-        //     inputData.min_x = csvValues[1];
-        //     inputData.max_y = csvValues[2];
-        //     inputData.min_y = csvValues[3];
-        //     inputData.max_z = csvValues[4];
-        //     inputData.min_z = csvValues[5];
-        // }
-
         //Input Validation
         const inputFirstName = document.getElementById("firstName").value;
         const inputEmail = document.getElementById("email").value;

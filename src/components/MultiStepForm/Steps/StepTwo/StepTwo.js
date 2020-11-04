@@ -130,37 +130,37 @@ const StepTwo = () => {
                     <input type="number" step="any" className="form-control"
                         value={inputData["max_x"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "max_x": e.target.value })}
-                        placeholder="Max X" id="max_x" aria-label="Max X"></input>
+                        placeholder="Max X" id="max_x" aria-label="Max X" required></input>
                 </div>
                 <div className="col-md-6 mb-3">
                     <input type="number" step="any" className="form-control"
                         value={inputData["min_x"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "min_x": e.target.value })}
-                        placeholder="Min X" id="min_x" aria-label="Min X"></input>
+                        placeholder="Min X" id="min_x" aria-label="Min X" required></input>
                 </div>
                 <div className="col-md-6 mb-3">
                     <input type="number" step="any" className="form-control"
                         value={inputData["max_y"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "max_y": e.target.value })}
-                        placeholder="Max Y" id="max_y" aria-label="Max Y"></input>
+                        placeholder="Max Y" id="max_y" aria-label="Max Y" required></input>
                 </div>
                 <div className="col-md-6 mb-3">
                     <input type="number" step="any" className="form-control"
                         value={inputData["min_y"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "min_y": e.target.value })}
-                        placeholder="Min Y" id="min_y" aria-label="Min Y"></input>
+                        placeholder="Min Y" id="min_y" aria-label="Min Y" required></input>
                 </div>
                 <div className="col-md-6 mb-3">
                     <input type="number" step="any" className="form-control"
                         value={inputData["max_z"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "max_z": e.target.value })}
-                        placeholder="Max Z" id="max_z" aria-label="Max Z"></input>
+                        placeholder="Max Z" id="max_z" aria-label="Max Z" required></input>
                 </div>
                 <div className="col-md-6 mb-3">
                     <input type="number" step="any" className="form-control"
                         value={inputData["min_z"] || ""}
                         onChange={(e) => setInputData({ ...inputData, "min_z": e.target.value })}
-                        placeholder="Min Z" id="min_z" aria-label="Min Z"></input>
+                        placeholder="Min Z" id="min_z" aria-label="Min Z" required></input>
                 </div>
                 <p className="text-danger text-center" id="alert-error"></p>
                 <div className="d-flex justify-content-center">
