@@ -18,10 +18,17 @@ const ToDo = () => {
     }
     return (
         <div className="to-do-page">
+            <nav className="navbar navbar-light text-light to-do-page-header">
+                <div className="container-fluid to-do-page-title">
+                    <a className="navbar-brand" href="/toDo">
+                        <h5>To Do App</h5>
+                    </a>
+                </div>
+            </nav>
             <div className="to-do-body">
                 <div className="row form-header">
                     <div className="col-md-4">
-                        <h3 className="text-info">Tasks</h3>
+                        <a className="todo-form-title" href="/toDo">Tasks</a>
                     </div>
                     <div className="col-md-8">
                         <div className="mt-1 d-flex justify-content-end">

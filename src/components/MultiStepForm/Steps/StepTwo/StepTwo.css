@@ -1,3 +1,13 @@
 div .btn{
     min-width: 120px;
 }
+.btn-file-upload{
+    cursor: pointer;
+}
+.btn-step-two{
+    background-color: #45B5C6;
+    border: none;
+}
+.btn-step-two:hover{
+    background-color: #01a8c2;
+}

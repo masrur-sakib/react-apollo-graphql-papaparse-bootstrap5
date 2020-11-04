@@ -6,19 +6,16 @@
 .multi-step-form-header{
     height: 50px;
     margin-bottom: 20px;
-    background-color: #17A2B8;
+    background-color: #45B5C6;
 }
-.site-title{
+.multi-step-form-page-title{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.site-title h5{
+.multi-step-form-page-title h5{
     color: white;
 }
-/* .form-page-left{
-    border-right: 1px solid #8080805e;
-} */
 .multi-step-form{
     margin: 0 auto;
     padding: 50px;
