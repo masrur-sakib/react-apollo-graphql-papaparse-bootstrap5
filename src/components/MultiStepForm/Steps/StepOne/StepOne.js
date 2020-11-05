@@ -7,6 +7,7 @@ const StepOne = () => {
     return (
         <div>
             <h5 className="mb-4 text-center text-info">Step One</h5>
+            {/* Step One Form  */}
             <form className="row" data-toggle="validator">
                 <div className="col-md-12 mb-3">
                     <input type="text" className="form-control"
@@ -26,7 +27,9 @@ const StepOne = () => {
                         onChange={(e) => setInputData({ ...inputData, "description": e.target.value })}
                         id="description" rows="2" placeholder="Description" required></textarea>
                 </div>
+                {/* Input Validation Error Alert */}
                 <p className="text-danger text-center" id="alert-error-stepOne"></p>
+                {/* Step One Next Button  */}
                 <div className="d-flex justify-content-center">
                     <button type="submit" className="btn btn-info" onClick={StepOneHandler}>
                         Next &rarr;

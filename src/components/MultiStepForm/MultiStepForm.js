@@ -12,7 +12,6 @@ const MultiStepForm = () => {
     const [inputData, setInputData] = useState([]);
     const [submittedData, setSubmittedData] = useState([]);
     const [emailExists, setEmailExists] = useState(false);
-    // const [, setEmailExists] = useState(false);
     let csvValues = [];
 
     const showStep = (step) => {
@@ -28,10 +27,12 @@ const MultiStepForm = () => {
         };
     };
 
+    // Step One Button Handler 
     const StepOneHandler = async (event) => {
         event.preventDefault();
         setEmailExists(false);
 
+        // Input Validation 
         const inputFirstName = document.getElementById("firstName").value;
         const inputEmail = document.getElementById("email").value;
         const inputDescription = document.getElementById("description").value;
@@ -56,6 +57,7 @@ const MultiStepForm = () => {
         };
     };
 
+    // Step Two Button Handler 
     const StepTwoHandler = (event) => {
         event.preventDefault();
 
@@ -97,6 +99,7 @@ const MultiStepForm = () => {
     return (
         <formContext.Provider value={{ step, setStep, inputData, setInputData, submittedData, setSubmittedData, StepTwoHandler, StepOneHandler, csvValues }}>
             <div className="multi-step-form-page">
+                {/* Multi Step Form Page Header / Navbar  */}
                 <nav className="navbar navbar-light text-light multi-step-form-header">
                     <div className="container-fluid multi-step-form-page-title">
                         <a className="navbar-brand" href="/multi-step-form">

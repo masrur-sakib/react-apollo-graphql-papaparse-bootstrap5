@@ -10,6 +10,7 @@ const ToDo = () => {
     const [inputToDo, setInputToDo] = useState([]);
     const [toDo, setToDo] = useState([{"toDoName": "Develop Skills"}, {toDoName: "Finish Tasks"}, {"toDoName": "Attend Meeting"}]);
 
+    // Submit Button Click & Enter Handling Function 
     const toDoHandler = (event) => {
         event.preventDefault();
         setToDo([...toDo, inputToDo]);
@@ -18,6 +19,7 @@ const ToDo = () => {
     }
     return (
         <div className="to-do-page">
+            {/* To Do Page Header / Navbar */}
             <nav className="navbar navbar-light text-light to-do-page-header">
                 <div className="container-fluid to-do-page-title">
                     <a className="navbar-brand" href="/toDo">
@@ -26,6 +28,7 @@ const ToDo = () => {
                 </div>
             </nav>
             <div className="to-do-body">
+                {/* To Do Form Header  */}
                 <div className="row form-header">
                     <div className="col-md-4">
                         <a className="todo-form-title" href="/toDo">Tasks</a>
@@ -41,6 +44,7 @@ const ToDo = () => {
                     </div>
                 </div>
                 <div className="form-body">
+                    {/* To Do Form  */}
                     <form className="row g-3 mt-4 form-todo ">
                         <div className="col-auto">
                             <input className="input-todo" type="text" 
@@ -57,6 +61,8 @@ const ToDo = () => {
                         </div>
                     </form>
                 </div>
+
+                {/* To Do List */}
                 <div className="to-do-list">
                     {
                         toDo.map((list, index) => (

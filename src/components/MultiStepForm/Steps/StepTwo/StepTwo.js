@@ -14,7 +14,9 @@ const StepTwo = () => {
             buttonRef.current.open(e)
         }
     }
+    // Function to auto insert input values when file uploaded
     const handleOnFileLoad = (data) => {
+        // Function to find out maximum and minimum value of X and insert the values
         let arrayX = [];
         for (let i = 1; i < (data.length-1); i++) {
             let newElement = parseFloat(data[i].data[1]);
@@ -31,6 +33,7 @@ const StepTwo = () => {
             };
         };
         
+        // Function to find out maximum and minimum value of Y and insert the values
         let arrayY = [];
         for (let i = 1; i < (data.length-1); i++) {
             let newElement = parseFloat(data[i].data[2]);
@@ -47,6 +50,7 @@ const StepTwo = () => {
             };
         };
 
+        // Function to find out maximum and minimum value of Z and insert the values
         let arrayZ = [];
         for (let i = 1; i < (data.length-1); i++) {
             let newElement = parseFloat(data[i].data[3]);
@@ -63,7 +67,8 @@ const StepTwo = () => {
             };
         };
         
-        if(!inputData.max_x, !inputData.min_x, !inputData.max_y, !inputData.min_x, !inputData.max_z, !inputData.min_z){
+        // If extracted values from csv file are not being submitted to the state then this function will work 
+        if(!inputData.max_x && !inputData.min_x && !inputData.max_y && !inputData.min_x && !inputData.max_z && !inputData.min_z){
             inputData.max_x = csvValues[0];
             inputData.min_x = csvValues[1];
             inputData.max_y = csvValues[2];
@@ -72,24 +77,18 @@ const StepTwo = () => {
             inputData.min_z = csvValues[5];
         }
     }
+
+    // Function error message 
     const handleOnError = (err, file, inputElem, reason) => {
         console.log(err)
-    }
-    const handleOnRemoveFile = (data) => {
-        console.log(data)
-    }
-    const handleRemoveFile = (e) => {
-        e.preventDefault();
-        if (buttonRef.current) {
-            buttonRef.current.removeFile(e)
-        }
     }
 
     return (
         <div>
             <h5 className="mb-4 text-center text-info">Step Two</h5>
+            {/* Step Two Form */}
             <form className="row">
-                {/* Step One Inputs */}
+                {/* Inputs from Step One */}
                 <div className="col-md-12 mb-3">
                     <input type="text" className="form-control"
                         value={inputData["firstName"] || ""}
@@ -113,15 +112,12 @@ const StepTwo = () => {
                     onError={handleOnError}
                     noClick
                     noDrag
-                    onRemoveFile={handleOnRemoveFile}
                 >
                     {() => (
                         <div className="d-flex justify-content-center">
                             <button className="mb-3 btn btn-secondary mr-2" type='button' onClick={handleOpenDialog}>
                                 Browse CSV File
                             </button>
-                            <span></span>
-                            <button className="mb-3 btn btn-danger" onClick={handleRemoveFile} > Remove CSV File </button>
                         </div>
                     )}
                 </CSVReader>
@@ -162,7 +158,9 @@ const StepTwo = () => {
                         onChange={(e) => setInputData({ ...inputData, "min_z": e.target.value })}
                         placeholder="Min Z" id="min_z" aria-label="Min Z" required></input>
                 </div>
+                {/* Input Validation Error Alert */}
                 <p className="text-danger text-center" id="alert-error"></p>
+                {/* Step Two Previous & Next Button  */}
                 <div className="d-flex justify-content-center">
                     <button className="btn btn-secondary mr-2" onClick={() => setStep(1)}>&larr; Previous</button>
                     <span></span>

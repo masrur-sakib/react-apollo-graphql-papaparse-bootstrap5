@@ -10,7 +10,6 @@ import PropertyCollections from './components/PropertyCollections/PropertyCollec
 import ToDo from './components/ToDo/ToDo';
 import MultiStepForm from './components/MultiStepForm/MultiStepForm';
 import NotFound from './components/NotFound/NotFound';
-import ApolloGraphql from './components/ApolloGraphql/ApolloGraphql';
 
 function App() {
   return (
@@ -29,9 +28,6 @@ function App() {
             </Route>
             <Route path="/multi-step-form">
               <MultiStepForm></MultiStepForm>
-            </Route>
-            <Route path="/apollo-graphql">
-              <ApolloGraphql></ApolloGraphql>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
