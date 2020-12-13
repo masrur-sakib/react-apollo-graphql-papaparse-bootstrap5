@@ -42,7 +42,7 @@ const Home = () => {
                     </div>
                     <div className="task-card">
                         <div className="card bg-light mb-3 task-body" style={{ maxWidth: "18rem" }}>
-                            <div className="card-header text-center"><b>Bonus Task</b></div>
+                            <div className="card-header text-center"><b>Task Four</b></div>
                             <div className="card-header text-center">Apollo Hook (GraphQL) Task</div>
                             <div className="card-body d-flex justify-content-center">
                                 <button className="btn btn-info">
